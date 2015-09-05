@@ -216,3 +216,28 @@ fun! <SID>CppUnitAdd(func_name)
 	exec "normal Ovoid ".l:class_name." :: ".l:name." () /**< auto-generated */{CPPUNIT_ASSERT(0);}"
 	exec "normal 2k"
 endfun
+
+" new .cc,.java,.sh,
+func SetTitle()
+    " if file type sh
+    if &filetype == 'sh'
+        call setline(1, "\#!/bin/bash")
+        call append(line(".")  , "\#########################################################################")
+        call append(line(".")+1, "\# Author      : ".g:DoxygenToolkit_authorName)
+        call append(line(".")+2, "\# Created Time: ".strftime("%c"))
+        call append(line(".")+3, "\# File Name   : ".expand("%"))
+        call append(line(".")+4, "\# Description : ")
+        call append(line(".")+5, "\#########################################################################")
+        call append(line(".")+6, "")
+        exe "normal G"
+    elseif &filetype == 'python' 
+        call setline(1, "\#!/usr/bin/env python")
+        call setline(2, "\# -*- coding: utf-8 -*-")
+        "if file .h
+    elseif strpart(expand("%"), strlen(expand("%"))-1, 1) == 'h'
+        exe "AHead"
+        exe "DoxAuthor"
+    elseif &filetype == 'c' || &filetype == 'cpp'
+        exe "DoxAuthor"
+    endif
+endfunc
