@@ -18,4 +18,9 @@ On Linux/Unix
 
 echo source ~/.vim/kinit.vim > ~/.vimrc
 
-Change Your name for doxygen
+Final step
+=============
+
+vim ~/.vim/config.vim 
+
+to Change Your name for doxygenToolkit, etc
