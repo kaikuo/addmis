@@ -1,1 +1,1 @@
-git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
+echo source ~/.vim/kinit.vim > %USERPROFILE%\_vimrc

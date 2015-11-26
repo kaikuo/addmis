@@ -23,6 +23,24 @@ set guioptions-=T
 set guioptions-=L
 set guioptions-=r
 
+" indent line
+" Vim
+let g:indentLine_color_term = 239
+
+"GVim
+let g:indentLine_color_gui = '#7E7E7E'
+
+" none X terminal
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
+
+"let g:indent_guides_auto_colors = 0
+"let g:indent_guides_guide_size = 1 
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+"hi IndentGuidesOdd guibg=red ctermbg=3
+"hi IndentGuidesEven guibg=green ctermbg=4
+
 " NERDtree
 let NERDTreeShowBookmarks=1
 
@@ -126,4 +144,4 @@ let g:ConqueTerm_InsertOnEnter = 1
 
 autocmd BufNewFile *.c,*.cpp,*.h,*.sh,*.py exec ":call SetTitle()"
 autocmd BufRead *.xml,*.py,*.rst exec ":set enc=utf-8"
-
+autocmd FileType python setlocal et sta sw=4 sts=4

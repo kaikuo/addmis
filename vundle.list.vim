@@ -12,6 +12,8 @@ Plugin 'scrooloose/nerdtree'
 
 " editing
 Plugin 'Mark'
+"Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Yggdroot/indentLine'
 
 " Documatation
 Plugin 'DoxygenToolkit.vim'
