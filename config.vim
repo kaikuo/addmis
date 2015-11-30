@@ -66,6 +66,7 @@ set cindent shiftwidth=4
 set nobackup
 set cindent tabstop=4
 set autowrite
+set cmdheight=1
 
 " settings for DoxygenToolkit
 let g:DoxygenToolkit_authorName="zkk@crscd.com.cn"

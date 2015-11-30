@@ -6,6 +6,8 @@ Plugin 'tpope/vim-fugitive'
 
 " General management
 Plugin 'L9'
+Plugin 'ack.vim'
+Plugin 'nerdtree-ack'
 Plugin 'minibufexpl.vim'
 Plugin 'sessionman.vim'
 Plugin 'scrooloose/nerdtree'
@@ -15,6 +17,8 @@ Plugin 'Mark'
 "Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vimwiki'
+Plugin 'bling/vim-airline'
+Plugin 'easymotion/vim-easymotion'
 
 " Documatation
 Plugin 'DoxygenToolkit.vim'
