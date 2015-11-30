@@ -4,22 +4,38 @@ what you need to use Vundle and my key binddings:
 Clone plugins
 ==============
 
-git clone https://github.com/kaikuo/addmis.git %USERPROFILE%/.vim
+clone my plugin
+
+`git clone https://github.com/kaikuo/addmis.git %USERPROFILE%/.vim`
+
+clone vundle.vim plugin
+
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
 
 On windows
 ============
 
-copy %USERPROFILE%\.vimrc %USERPROFILE%\.vimrc.bak
+backup your current vimrc files:
 
-echo source ~/.vim/kinit.vim > %USERPROFILE%\_vimrc
+`copy %USERPROFILE%\.vimrc %USERPROFILE%\.vimrc.bak`
+
+
+make new vimrc file
+
+`echo source ~/.vim/kinit.vim > %USERPROFILE%\_vimrc`
 
 On Linux/Unix
 ==============
 
-echo source ~/.vim/kinit.vim > ~/.vimrc
+`echo source ~/.vim/kinit.vim > ~/.vimrc`
 
 Final step
 =============
+
+execute:
+
+:VundleInstall
 
 vim ~/.vim/config.vim 
 

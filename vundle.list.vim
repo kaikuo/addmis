@@ -26,7 +26,7 @@ Plugin 'scrooloose/nerdcommenter'
 
 " C/C++ programming
 Plugin 'a.vim'
-Plugin 'echofunc.vim'
+"Plugin 'echofunc.vim'
 Plugin 'kaikuo/addmis'
 if executable('ctags')
 	Plugin 'taglist.vim'
