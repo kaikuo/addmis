@@ -10,7 +10,7 @@ clone my plugin
 
 clone vundle.vim plugin
 
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+`git clone https://github.com/VundleVim/Vundle.vim.git %USERPROFILE%/.vim/bundle/Vundle.vim`
 
 
 On windows
@@ -18,7 +18,7 @@ On windows
 
 backup your current vimrc files:
 
-`copy %USERPROFILE%\.vimrc %USERPROFILE%\.vimrc.bak`
+`copy %USERPROFILE%\_vimrc %USERPROFILE%\_vimrc.bak`
 
 
 make new vimrc file
@@ -37,6 +37,14 @@ execute:
 
 :VundleInstall
 
+gvim +PluginInstall +quit
+
+vim +PluginInstall +quit
+
 vim ~/.vim/config.vim 
 
 to Change Your name for doxygenToolkit, etc
+
+download and delete $VIM/gvimrc
+
+http://files.kaoriya.net/vim/

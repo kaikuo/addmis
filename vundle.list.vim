@@ -7,13 +7,14 @@ Plugin 'tpope/vim-fugitive'
 " General management
 Plugin 'L9'
 Plugin 'minibufexpl.vim'
-Plugin 'vim-scripts/sessionman.vim'
+Plugin 'sessionman.vim'
 Plugin 'scrooloose/nerdtree'
 
 " editing
 Plugin 'Mark'
 "Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
+Plugin 'vimwiki'
 
 " Documatation
 Plugin 'DoxygenToolkit.vim'
@@ -25,6 +26,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdcommenter'
 
 " C/C++ programming
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'a.vim'
 "Plugin 'echofunc.vim'
 Plugin 'kaikuo/addmis'
