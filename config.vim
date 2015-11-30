@@ -133,7 +133,7 @@ set path=.,include,../include
 set tags=tags,../tags,
 
 "set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
-"set encoding=cp936 fileencoding=cp936 fileencodings=ucs-bom,utf-8,cp936
+set encoding=cp936 fileencoding=cp936 fileencodings=ucs-bom,utf-8,cp936
 
 " set conque_term
 let g:ConqueTerm_PyExe = 'C:/python27/python.exe'
