@@ -69,21 +69,12 @@ set autowrite
 set cmdheight=1
 
 " settings for DoxygenToolkit
+""""""""""""""""""""""""""""""
 let g:DoxygenToolkit_authorName="zkk@crscd.com.cn"
 let g:DoxygenToolkit_briefTag_funcName="yes"
 
 " cscope相关内容
-function! LoadCscope()
-	let db = findfile("cscope.out", ".;")
-	if (!empty(db))
-		let path = strpart(db, 0, match(db, "/cscope.out$"))
-		set nocsverbose " suppress 'duplicate connection' error
-		exe "cs add " . db . " " . path
-		set csverbose
-	endif
-endfunction
-" au BufEnter /* call LoadCscope()
-
+""""""""""""""""""""""""""""""
 if has("cscope")
 	set csto=0
 	set cst
@@ -103,6 +94,9 @@ let OmniCpp_ShowPrototypeInAbbr = 1
 set completeopt=longest,menu
 " End
 
+""""""""""""""""""""""""""""""
+" GUI
+""""""""""""""""""""""""""""""
 if has("gui")
 	set sessionoptions+=resize,winpos
 	" 全屏
@@ -133,15 +127,56 @@ set path=.,include,../include
 "set makeprg=nmake
 set tags=tags,../tags,
 
-"set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
-set encoding=cp936 fileencoding=cp936 fileencodings=ucs-bom,utf-8,cp936
+""""""""""""""""""""""""""""""
+"Neo complete configs
+""""""""""""""""""""""""""""""
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+""""""""""""""""""""""""""""""
 " set conque_term
+""""""""""""""""""""""""""""""
 let g:ConqueTerm_PyExe = 'C:/python27/python.exe'
 let g:ConqueTerm_CodePage = 0
 let g:ConqueTerm_SessionSupport = 1
 let g:ConqueTerm_InsertOnEnter = 1
 " let g:ConqueTerm_ColorMode = 'conceal'
+
+""""""""""""""""""""""""""""""
+" set airline
+""""""""""""""""""""""""""""""
+"let g:airline_theme='airlineish'
+"let g:airline_inactive_collapse=1
+
+""""""""""""""""""""""""""""""
+" set ctrlp
+""""""""""""""""""""""""""""""
+if has('win32')
+	set wildignore+=*\\.git\\*,*\\.svn\\*,*\\proj\\*  " Windows ('noshellslash')
+else
+	set wildignore+=*/.git/*,*/proj/*,*/.svn/*        " Linux/MacOSX
+endif
+let g:ctrlp_custom_ignore = {'dir': '\v[\/](proj|\.git)$', 'file': '\v\.(exe|dll|obj|lib|o)'}
+
+""""""""""""""""""""""""""""""
+" set encoding
+""""""""""""""""""""""""""""""
+"set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
+"set encoding=cp936 fileencoding=cp936 fileencodings=ucs-bom,utf-8,cp936
 
 autocmd BufNewFile *.c,*.cpp,*.h,*.sh,*.py exec ":call SetTitle()"
 autocmd BufRead *.xml,*.py,*.rst exec ":set enc=utf-8"

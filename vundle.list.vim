@@ -7,7 +7,7 @@ Plugin 'tpope/vim-fugitive'
 " General management
 Plugin 'L9'
 Plugin 'ack.vim'
-Plugin 'nerdtree-ack'
+"Plugin 'nerdtree-ack'
 Plugin 'minibufexpl.vim'
 Plugin 'sessionman.vim'
 Plugin 'scrooloose/nerdtree'
