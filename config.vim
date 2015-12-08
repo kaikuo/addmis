@@ -68,6 +68,10 @@ set cindent tabstop=4
 set autowrite
 set cmdheight=1
 
+set undofile
+set undodir=$HOME/\_undodir
+set undolevels=1000 "maximum number of changes that can be undone
+
 " settings for DoxygenToolkit
 """"""""""""""""""""""""""""""
 let g:DoxygenToolkit_authorName="zkk@crscd.com.cn"
@@ -75,19 +79,7 @@ let g:DoxygenToolkit_briefTag_funcName="yes"
 
 " cscopeœ‡πÿƒ⁄»›
 """"""""""""""""""""""""""""""
-if has("cscope")
-	set csto=0
-	set cst
-	set nocsverb
-	" add any database in current directory
-	if filereadable("cscope.out")
-	    cs add cscope.out
-	" else add database pointed to by environment
-	elseif $CSCOPE_DB != ""
-	    cs add $CSCOPE_DB
-	endif
-	set csverb
-endif
+let g:cscope_silent=1
 
 let OmniCpp_MayCompleteScope = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
@@ -139,6 +131,17 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+""""""""""""""""""""""""""""""
+"Neo snippet
+""""""""""""""""""""""""""""""
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+			\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+			\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS

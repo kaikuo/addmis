@@ -11,6 +11,7 @@ Plugin 'ack.vim'
 Plugin 'minibufexpl.vim'
 Plugin 'sessionman.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mbbill/fencview'
 
 " editing
 Plugin 'Mark'
@@ -19,6 +20,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vimwiki'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'brookhong/cscope.vim'
 
 " Documatation
 Plugin 'DoxygenToolkit.vim'
@@ -39,12 +41,16 @@ if executable('ctags')
 	Plugin 'majutsushi/tagbar'
 endif
 
+" python programming
+"Plugin 'davidhalter/jedi-vim'
+Plugin 'pythoncomplete'
+
 " auto complete
 Plugin 'Shougo/neocomplete.vim.git'
+Plugin 'Shougo/context_filetype.vim'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'honza/vim-snippets'
 
 " other
-Plugin 'pythoncomplete'
 Plugin 'amirh/HTML-AutoCloseTag'
