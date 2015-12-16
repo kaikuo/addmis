@@ -51,6 +51,7 @@ Plugin 'Shougo/context_filetype.vim'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'honza/vim-snippets'
+Plugin 'xml.vim'
 
 " other
 Plugin 'amirh/HTML-AutoCloseTag'
