@@ -182,5 +182,5 @@ let g:ctrlp_custom_ignore = {'dir': '\v[\/](proj|\.git)$', 'file': '\v\.(exe|dll
 "set encoding=cp936 fileencoding=cp936 fileencodings=ucs-bom,utf-8,cp936
 
 autocmd BufNewFile *.c,*.cpp,*.h,*.sh,*.py exec ":call SetTitle()"
-autocmd BufRead *.xml,*.py,*.rst exec ":set enc=utf-8"
+autocmd BufRead *.md,*.js,*.xml,*.py,*.rst exec ":set enc=utf-8"
 autocmd FileType python setlocal et sta sw=4 sts=4

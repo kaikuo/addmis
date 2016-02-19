@@ -221,7 +221,7 @@ endfun
 func SetTitle()
     " if file type sh
     if &filetype == 'sh'
-        call setline(1, "\#!/bin/bash")
+        call setline(1, "\#!/bin/sh")
         call append(line(".")  , "\#########################################################################")
         call append(line(".")+1, "\# Author      : ".g:DoxygenToolkit_authorName)
         call append(line(".")+2, "\# Created Time: ".strftime("%c"))
