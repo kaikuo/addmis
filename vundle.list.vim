@@ -21,6 +21,7 @@ Plugin 'vimwiki'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'brookhong/cscope.vim'
+Plugin 'tpope/vim-markdown'
 
 " Documatation
 Plugin 'DoxygenToolkit.vim'

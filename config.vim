@@ -74,7 +74,7 @@ set undolevels=1000 "maximum number of changes that can be undone
 
 " settings for DoxygenToolkit
 """"""""""""""""""""""""""""""
-let g:DoxygenToolkit_authorName="kaikuo.zhuo@hotmail.com"
+let g:DoxygenToolkit_authorName="003"
 let g:DoxygenToolkit_briefTag_funcName="yes"
 
 " cscopeÏà¹ØÄÚÈİ
