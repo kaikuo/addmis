@@ -69,3 +69,17 @@ to Change Your name for doxygenToolkit, etc
 download and delete $VIM/gvimrc
 
 http://files.kaoriya.net/vim/
+
+As a script
+============
+
+Linux
+--------
+
+```sh
+sudo apt install vim-nox
+git clone --depth=1 https://github.com/kaikuo/addmis.git ~/.vim
+git clone  --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo source ~/.vim/kinit.vim > ~/.vimrc
+vim +PluginInstall +quit
+```

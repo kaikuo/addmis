@@ -47,11 +47,11 @@ endif
 "Plugin 'pythoncomplete'
 
 " auto complete
-Plugin 'Shougo/neocomplete.vim.git'
-Plugin 'Shougo/context_filetype.vim'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'honza/vim-snippets'
+"Plugin 'Shougo/neocomplete.vim.git'
+"Plugin 'Shougo/context_filetype.vim'
+"Plugin 'Shougo/neosnippet'
+"Plugin 'Shougo/neosnippet-snippets'
+"Plugin 'honza/vim-snippets'
 Plugin 'xml.vim'
 
 " other
