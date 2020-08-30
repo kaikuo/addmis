@@ -2,7 +2,7 @@
 Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 
 " General management
 Plugin 'L9'
@@ -11,15 +11,15 @@ Plugin 'ack.vim'
 Plugin 'minibufexpl.vim'
 Plugin 'sessionman.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mbbill/fencview'
+"Plugin 'mbbill/fencview'
 
 " editing
 Plugin 'Mark'
 "Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
-Plugin 'vimwiki'
-Plugin 'bling/vim-airline'
-Plugin 'easymotion/vim-easymotion'
+"Plugin 'vimwiki'
+"Plugin 'bling/vim-airline'
+"Plugin 'easymotion/vim-easymotion'
 Plugin 'brookhong/cscope.vim'
 Plugin 'tpope/vim-markdown'
 
@@ -44,7 +44,7 @@ endif
 
 " python programming
 "Plugin 'davidhalter/jedi-vim'
-Plugin 'pythoncomplete'
+"Plugin 'pythoncomplete'
 
 " auto complete
 Plugin 'Shougo/neocomplete.vim.git'
